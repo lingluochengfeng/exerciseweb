@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="usstweb:war">
+    <output-path>$PROJECT_DIR$/usstweb/target</output-path>
+    <root id="archive" name="usstweb.war">
+      <element id="artifact" artifact-name="usstweb:war exploded" />
+    </root>
+  </artifact>
+</component>
