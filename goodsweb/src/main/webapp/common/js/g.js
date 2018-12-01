@@ -1,0 +1,1 @@
+alert("customermgr==========gggggg.js")

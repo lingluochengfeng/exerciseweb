@@ -5,7 +5,7 @@
 <%@page import="com.usst.exerciseweb.customermgr.Customer1" %>
 
 <%
-    System.out.println("now in customermgr index.jsp");
+    System.out.println("now in customermgr c1.jsp");
     new Customer1().c1();
 %>
 

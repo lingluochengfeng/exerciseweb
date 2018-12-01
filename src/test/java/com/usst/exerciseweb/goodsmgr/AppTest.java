@@ -1,4 +1,4 @@
-package com.usst;
+package com.usst.exerciseweb.goodsmgr;
 
 import static org.junit.Assert.assertTrue;
 
