@@ -1,0 +1,1 @@
+alert("goodsweb aaaaaa.js");
