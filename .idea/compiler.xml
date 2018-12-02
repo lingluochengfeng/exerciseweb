@@ -8,19 +8,21 @@
         <outputRelativeToContentRoot value="true" />
         <module name="commom" />
         <module name="customermgr" />
-        <module name="goods" />
+        <module name="goodsmgr" />
         <module name="goodsweb" />
         <module name="usstweb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="commom" target="1.7" />
-      <module name="customermanager" target="1.8" />
       <module name="customermgr" target="1.7" />
       <module name="exerciseweb" target="1.7" />
-      <module name="goods" target="1.7" />
+      <module name="goodsmgr" target="1.7" />
       <module name="goodsweb" target="1.7" />
       <module name="usstweb" target="1.7" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
   </component>
 </project>

@@ -1,1 +1,1 @@
-alert("goodsweb ccccccc.js");
+alert("customermgr==========gggggg.js")

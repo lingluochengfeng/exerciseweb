@@ -1,4 +1,4 @@
-package com.usst;
+package com.usst.exerciseweb.goodsmgr;
 
 /**
  * Hello world!

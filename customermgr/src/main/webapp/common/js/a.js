@@ -1,1 +1,1 @@
-alert("Customer aaaaaa.js");
+alert("customermgr==========aaaaaaa.js")

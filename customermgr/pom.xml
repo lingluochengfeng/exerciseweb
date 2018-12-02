@@ -23,6 +23,12 @@
     </properties>
 
     <dependencies>
+        <!--这个依赖是依赖common中的内容-->
+        <dependency>
+            <groupId>com.usst</groupId>
+            <artifactId>commom</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>com.usst</groupId>
             <artifactId>commom</artifactId>
@@ -68,6 +74,26 @@
                 <plugin>
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>2.8.2</version>
+                </plugin>
+
+                <!--添加jetty配置，为了使每个测试的模块能够运行-->
+                <plugin>
+                    <groupId>org.mortbay.jetty</groupId>
+                    <artifactId>jetty-maven-plugin</artifactId>
+                    <version>8.1.14.v20131031</version>
+                    <configuration>
+                        <scanIntervalSeconds>10</scanIntervalSeconds>
+                        <stopPort>9999</stopPort>
+                        <webAppConfig>
+                            <contextPath>/customer</contextPath>
+                        </webAppConfig>
+                        <connectors>
+                            <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                                <port>9080</port>
+                                <maxIdleTime>60000</maxIdleTime>
+                            </connector>
+                        </connectors>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
