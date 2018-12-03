@@ -22,6 +22,7 @@
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
 
+    <!--合并工程所用的依赖-->
     <dependencies>
         <dependency>
             <groupId>com.usst</groupId>
@@ -35,6 +36,7 @@
             <version>1.0-SNAPSHOT</version>
             <type>war</type>
         </dependency>
+        <!--junit测试-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
