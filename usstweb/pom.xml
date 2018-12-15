@@ -36,6 +36,24 @@
             <version>1.0-SNAPSHOT</version>
             <type>war</type>
         </dependency>
+        <dependency>
+            <groupId>com.usst</groupId>
+            <artifactId>cartmgr</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>com.usst</groupId>
+            <artifactId>ordermgr</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>com.usst</groupId>
+            <artifactId>storemgr</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>war</type>
+        </dependency>
         <!--junit测试-->
         <dependency>
             <groupId>junit</groupId>
@@ -94,6 +112,18 @@
                             <overlay>
                                 <groupId>com.usst</groupId>
                                 <artifactId>goodsweb</artifactId>
+                            </overlay>
+                            <overlay>
+                                <groupId>com.usst</groupId>
+                                <artifactId>cartmgr</artifactId>
+                            </overlay>
+                            <overlay>
+                                <groupId>com.usst</groupId>
+                                <artifactId>ordermgr</artifactId>
+                            </overlay>
+                            <overlay>
+                                <groupId>com.usst</groupId>
+                                <artifactId>storemgr</artifactId>
                             </overlay>
                         </overlays>
                     </configuration>

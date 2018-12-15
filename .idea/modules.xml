@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/cartmgr/cartmgr.iml" filepath="$PROJECT_DIR$/cartmgr/cartmgr.iml" />
       <module fileurl="file://$PROJECT_DIR$/commom/commom.iml" filepath="$PROJECT_DIR$/commom/commom.iml" />
       <module fileurl="file://$PROJECT_DIR$/customermgr/customermgr.iml" filepath="$PROJECT_DIR$/customermgr/customermgr.iml" />
       <module fileurl="file://$PROJECT_DIR$/exerciseweb.iml" filepath="$PROJECT_DIR$/exerciseweb.iml" />
       <module fileurl="file://$PROJECT_DIR$/goods/goodsmgr.iml" filepath="$PROJECT_DIR$/goods/goodsmgr.iml" />
       <module fileurl="file://$PROJECT_DIR$/goodsweb/goodsweb.iml" filepath="$PROJECT_DIR$/goodsweb/goodsweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ordermgr/ordermgr.iml" filepath="$PROJECT_DIR$/ordermgr/ordermgr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storemgr/storemgr.iml" filepath="$PROJECT_DIR$/storemgr/storemgr.iml" />
       <module fileurl="file://$PROJECT_DIR$/usstweb/usstweb.iml" filepath="$PROJECT_DIR$/usstweb/usstweb.iml" />
     </modules>
   </component>

@@ -6,19 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cartmgr" />
         <module name="commom" />
         <module name="customermgr" />
         <module name="goodsmgr" />
         <module name="goodsweb" />
+        <module name="ordermgr" />
+        <module name="storemgr" />
         <module name="usstweb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cart" target="1.7" />
+      <module name="cartmgr" target="1.7" />
       <module name="commom" target="1.7" />
       <module name="customermgr" target="1.7" />
       <module name="exerciseweb" target="1.7" />
       <module name="goodsmgr" target="1.7" />
       <module name="goodsweb" target="1.7" />
+      <module name="ordermgr" target="1.7" />
+      <module name="storemgr" target="1.7" />
       <module name="usstweb" target="1.7" />
     </bytecodeTargetLevel>
   </component>

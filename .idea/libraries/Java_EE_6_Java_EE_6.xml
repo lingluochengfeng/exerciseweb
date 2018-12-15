@@ -13,5 +13,8 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <excluded>
+      <root url="file://$PROJECT_DIR$/customermgr/src/main/webapp/WEB-INF/lib" />
+    </excluded>
   </library>
 </component>
