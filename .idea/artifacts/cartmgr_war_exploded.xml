@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="cartmgr:war exploded">
+    <output-path>$PROJECT_DIR$/cartmgr/target/cartmgr</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="cartmgr" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/cartmgr/target/cartmgr/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="cartmgr/web/Web" />
+    </root>
+  </artifact>
+</component>
