@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.usst.exerciseweb.customermgr.dao.CustomerDAO">
+    <!--插入-->
+    <insert id="create" parameterType="com.usst.exerciseweb.
+                customermgr.vo.CustomerModel">
+        INSERT INTO tb1_customer(customerId, pwd, showName, trueName,
+          registerTime) VALUES (#{customerId},#{pwd},
+            #{showName},#{trueName},#{registerTime})
+    </insert>
+
+    <!--更新-->
+    <update id="update" parameterType="com.usst.exerciseweb.customermgr.vo.CustomerModel">
+        UPDATE tb1_customer SET #{customerId},#{pwd},
+            #{showName},#{trueName},#{registerTime}
+             WHERE uuid=#{uuid}
+    </update>
+
+    <!--删除-->
+    <delete id="delete" parameterType="int">
+        DELETE FROM tb1_customer where uuid=#{uuid}
+    </delete>
+
+    <!--按uuid选择-->
+    <select id="getByUuid" parameterType="int"
+            resultType="com.usst.exerciseweb.customermgr.vo.CustomerModel">
+        SELECT * FROM tb1_customer WHERE uuid=#{uuid}
+    </select>
+
+    <select id="getByCondition" parameterType="com.usst.exerciseweb.customermgr.vo.CustomerQueryModel"
+            resultType="com.usst.exerciseweb.customermgr.vo.CustomerQueryModel">
+        SELECT * FROM tb1_customer
+        <where>
+            <if test="uuid != null &amp;&amp; uuid > 0">
+                and uuid=#{uuid}
+            </if>
+            <if test="customerId != null">
+                and customerId=#{customerId}
+            </if>
+            <if test="showName != null">
+                and showName=#{showName}
+            </if>
+        </where>
+    </select>
+</mapper>
