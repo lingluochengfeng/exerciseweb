@@ -9,9 +9,10 @@ public class CustomerModel {
     private String customerId;
     private String pwd;
     //这里的时间为了简单方便，采用String的形式，以后还是要多考虑
-    private String showTime;
-    private String trueName;
     private String registerTime;
+    private String showName;
+    private String trueName;
+
 
     public Integer getUuid() {
         return uuid;
@@ -37,12 +38,12 @@ public class CustomerModel {
         this.pwd = pwd;
     }
 
-    public String getShowTime() {
-        return showTime;
+    public String getShowName() {
+        return showName;
     }
 
-    public void setShowTime(String showTime) {
-        this.showTime = showTime;
+    public void setShowName(String showTime) {
+        this.showName = showTime;
     }
 
     public String getTrueName() {
@@ -82,7 +83,7 @@ public class CustomerModel {
                 "uuid=" + uuid +
                 ", customerId='" + customerId + '\'' +
                 ", pwd='" + pwd + '\'' +
-                ", showTime='" + showTime + '\'' +
+                ", showTime='" + showName + '\'' +
                 ", trueName='" + trueName + '\'' +
                 ", registerTime='" + registerTime + '\'' +
                 '}';
