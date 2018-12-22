@@ -13,7 +13,7 @@ import java.util.List;
 @Repository
 public interface CustomerDAO {
 
-    public void create(CustomerModel customerModel);
+    public void create(CustomerModel cm);
     public void update(CustomerModel customerModel);
     public void delete(int uuid);
 

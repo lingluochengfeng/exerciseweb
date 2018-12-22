@@ -4,6 +4,13 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-
+        <typeAlias type="com.usst.exerciseweb.customermgr.vo.CustomerModel" alias="CM"/>
+        <typeAlias type="com.usst.exerciseweb.customermgr.vo.CustomerQueryModel"
+                   alias="CQM"/>
     </typeAliases>
+
+    <!---->
+    <!--<plugins>-->
+        <!--<plugin interceptor="com.usst."></plugin>-->
+    <!--</plugins>-->
 </configuration>
