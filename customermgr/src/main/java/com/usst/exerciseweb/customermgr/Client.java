@@ -1,4 +1,4 @@
-package com.usst.exerciseweb.customermgr.test;
+package com.usst.exerciseweb.customermgr;
 
 import com.usst.exerciseweb.customermgr.dao.CustomerDAO;
 import com.usst.exerciseweb.customermgr.vo.CustomerModel;
@@ -18,24 +18,24 @@ import java.util.List;
 public class Client {
 
     @Autowired
-    private CustomerDAO ct;
+    private CustomerDAO customerDAO;
 
     public static void main(String[] args) {
         ApplicationContext ctx = new
                 ClassPathXmlApplicationContext("applicationContext.xml");
-//        Client t = (Client) ctx.getBean("client");
-//
-//        CustomerModel cm = new CustomerModel();
-//        cm.setCustomerId("c1");
-//        cm.setRegisterTime("");
-//        cm.setShowName("c1");
-//        cm.setTrueName("张三");
-//
-//        t.customerDAO.create(cm);
-//
-//        List<CustomerModel> list = t.customerDAO.
-//                getByCondition(new CustomerQueryModel());
-//        System.out.println(list);
+        Client t = (Client) ctx.getBean("client");
+
+        CustomerModel cm = new CustomerModel();
+        cm.setCustomerId("c2");
+        cm.setRegisterTime("2018");
+        cm.setShowName("c2");
+        cm.setTrueName("里斯");
+
+        t.customerDAO.create(cm);
+
+        List<CustomerModel> list = t.customerDAO.
+                getByCondition(new CustomerQueryModel());
+        System.out.println(list);
         System.out.println("hahha");
     }
 

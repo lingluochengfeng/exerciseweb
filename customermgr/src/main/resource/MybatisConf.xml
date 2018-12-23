@@ -5,8 +5,7 @@
 <configuration>
     <typeAliases>
         <typeAlias type="com.usst.exerciseweb.customermgr.vo.CustomerModel" alias="CM"/>
-        <typeAlias type="com.usst.exerciseweb.customermgr.vo.CustomerQueryModel"
-                   alias="CQM"/>
+        <typeAlias type="com.usst.exerciseweb.customermgr.vo.CustomerQueryModel" alias="CQM"/>
     </typeAliases>
 
     <!---->
