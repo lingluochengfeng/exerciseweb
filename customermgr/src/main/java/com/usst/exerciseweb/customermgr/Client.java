@@ -3,6 +3,7 @@ package com.usst.exerciseweb.customermgr;
 import com.usst.exerciseweb.customermgr.dao.CustomerDAO;
 import com.usst.exerciseweb.customermgr.vo.CustomerModel;
 import com.usst.exerciseweb.customermgr.vo.CustomerQueryModel;
+import com.usst.pageutil.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -26,17 +27,28 @@ public class Client {
         Client t = (Client) ctx.getBean("client");
 
         CustomerModel cm = new CustomerModel();
-        cm.setCustomerId("c2");
-        cm.setRegisterTime("2018");
-        cm.setShowName("c2");
-        cm.setTrueName("里斯");
+        cm.setCustomerId("c5");
+        cm.setRegisterTime("2017");
+        cm.setShowName("c5");
+        cm.setTrueName("哈根达斯");
 
-        t.customerDAO.create(cm);
+        //这是没分页的代码
+//        t.customerDAO.create(cm);
+//        List<CustomerModel> list = t.customerDAO.
+//                getByCondition(new CustomerQueryModel());
+//        System.out.println(list);
 
+        //这是分页的代码
+        CustomerQueryModel cqm = new CustomerQueryModel();
+        cqm.getPage().setNowPage(1);
+        cqm.getPage().setPageShow(3);
+        //把mapper和接口的条件改为getByConditionPage
         List<CustomerModel> list = t.customerDAO.
-                getByCondition(new CustomerQueryModel());
+                getByConditionPage(cqm);
         System.out.println(list);
-        System.out.println("hahha");
+
+        System.out.println("page==" + cqm.getPage());
+
     }
 
 }

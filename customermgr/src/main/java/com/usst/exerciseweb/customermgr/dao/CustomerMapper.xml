@@ -26,7 +26,7 @@
         SELECT * FROM tbl_customer WHERE uuid=#{uuid}
     </select>
 
-    <select id="getByCondition" parameterType="com.usst.exerciseweb.customermgr.vo.CustomerQueryModel"
+    <select id="getByConditionPage" parameterType="com.usst.exerciseweb.customermgr.vo.CustomerQueryModel"
             resultType="com.usst.exerciseweb.customermgr.vo.CustomerQueryModel">
         SELECT * FROM tbl_customer
         <where>

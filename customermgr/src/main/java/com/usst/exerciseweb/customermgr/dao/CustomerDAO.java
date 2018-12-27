@@ -1,5 +1,6 @@
 package com.usst.exerciseweb.customermgr.dao;
 
+import com.usst.exerciseweb.common.dao.BaseDAO;
 import com.usst.exerciseweb.customermgr.vo.CustomerModel;
 import com.usst.exerciseweb.customermgr.vo.CustomerQueryModel;
 import org.springframework.stereotype.Repository;
@@ -11,7 +12,7 @@ import java.util.List;
  * @since 2018-12-15 19:53
  */
 @Repository
-public interface CustomerDAO {
+public interface CustomerDAO extends BaseDAO<CustomerModel,CustomerQueryModel> {
 
     public void create(CustomerModel cm);
     public void update(CustomerModel customerModel);
@@ -19,5 +20,5 @@ public interface CustomerDAO {
 
 
     public CustomerModel getByUuid(int uuid);
-    public List<CustomerModel> getByCondition(CustomerQueryModel customerQueryModel);
+    public List<CustomerModel> getByConditionPage(CustomerQueryModel customerQueryModel);
 }

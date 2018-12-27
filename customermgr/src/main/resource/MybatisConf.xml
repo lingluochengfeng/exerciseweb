@@ -8,8 +8,11 @@
         <typeAlias type="com.usst.exerciseweb.customermgr.vo.CustomerQueryModel" alias="CQM"/>
     </typeAliases>
 
-    <!---->
-    <!--<plugins>-->
-        <!--<plugin interceptor="com.usst."></plugin>-->
-    <!--</plugins>-->
+    <!--分页的插件-->
+    <plugins>
+        <plugin interceptor="com.usst.pageutil.PagePlugin">
+            <property name="dialect" value="mysql" />
+            <property name="pageSqlId" value=".*Page.*" />
+        </plugin>
+    </plugins>
 </configuration>
