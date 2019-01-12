@@ -14,8 +14,9 @@
     <module>customermgr</module>
     <module>goodsweb</module>
     <module>cartmgr</module>
-      <module>ordermgr</module>
+    <module>ordermgr</module>
     <module>storemgr</module>
+    <module>front</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -30,6 +31,35 @@
   </properties>
 
   <dependencies>
+
+    <!--servlet的jar包-->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+      <!--该属性表示开发期间使用，打包时不需要加进去-->
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>jsp-api</artifactId>
+      <version>2.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!--ehcache缓存-->
+    <dependency>
+      <groupId>net.sf.ehcache</groupId>
+      <artifactId>ehcache</artifactId>
+      <version>2.10.1</version>
+    </dependency>
+
+    <!--ehcache缓存和MyBatis相结合-->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-ehcache</artifactId>
+      <version>1.0.0</version>
+    </dependency>
 
     <!--cglib的jar包-->
     <dependency>

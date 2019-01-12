@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/commom/commom.iml" filepath="$PROJECT_DIR$/commom/commom.iml" />
       <module fileurl="file://$PROJECT_DIR$/customermgr/customermgr.iml" filepath="$PROJECT_DIR$/customermgr/customermgr.iml" />
       <module fileurl="file://$PROJECT_DIR$/exerciseweb.iml" filepath="$PROJECT_DIR$/exerciseweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/front/front.iml" filepath="$PROJECT_DIR$/front/front.iml" />
       <module fileurl="file://$PROJECT_DIR$/goods/goodsmgr.iml" filepath="$PROJECT_DIR$/goods/goodsmgr.iml" />
       <module fileurl="file://$PROJECT_DIR$/goodsweb/goodsweb.iml" filepath="$PROJECT_DIR$/goodsweb/goodsweb.iml" />
       <module fileurl="file://$PROJECT_DIR$/ordermgr/ordermgr.iml" filepath="$PROJECT_DIR$/ordermgr/ordermgr.iml" />

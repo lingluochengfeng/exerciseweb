@@ -1,1 +1,0 @@
-alert("customermgr==========aaaaaaa.js")

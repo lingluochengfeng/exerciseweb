@@ -98,9 +98,23 @@
                         </connectors>
                     </configuration>
                 </plugin>
+
+                <!--这个plugin用于解决打包方式是war包，而不是jar包所引起的错误-->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <configuration>
+                        <!--注意增加的这两行，在打包的时候，相关的类会被独立打成jar-->
+                        <attachClasses>true</attachClasses>
+                        <classesClassifier>api</classesClassifier>
+                    </configuration>
+                    <version>2.4</version>
+                    <executions></executions>
+                </plugin>
             </plugins>
         </pluginManagement>
 
+        <!--编译xml文件-->
         <resources>
             <resource>
                 <directory>src/main/java</directory>
